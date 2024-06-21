@@ -1,9 +1,9 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "newExpress.js",
   "scripts": {
-    "start": "nodemon newExpress.js"
+    "start": "newExpress.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
