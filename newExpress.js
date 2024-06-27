@@ -14,7 +14,6 @@ const MONGODB_URI = 'mongodb://localhost:27017/ecommerce-App';
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  // Remove useCreateIndex option here
 })
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.log(err));
@@ -26,6 +25,7 @@ app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
+app.use('/products', productRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
