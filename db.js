@@ -1,4 +1,4 @@
-const mongoDbUrl = 'mongodb://localhost:27017/hotels'
+const mongoDbUrl = 'mongodb://localhost:27017/ecommerceApp'
 
 const mongoose = require('mongoose');
 mongoose.connect(mongoDbUrl, {
